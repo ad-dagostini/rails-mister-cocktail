@@ -1,0 +1,17 @@
+<div class="banner">
+  <div class="d-flex justify-content-center align-self-center mb-3 mt-3 p-4">
+    <%= image_tag "logo", width: 210, height: 220, crop: :fill %>
+    <div class="header mb-3 mt-3 p-4"><h1><strong>Cocktails<strong></h1></div>
+  </div>
+<div>
+</div class="mx-5 p-4">
+  <h4 class="text-center"><%= link_to "Create Your Cocktail", new_cocktail_path %></h4>
+</div>
+<div class="container d-flex">
+  <% @cocktails.each do |cocktail| %>
+    <div class="card m-4" style="width: 18rem;">
+      <div class="text-center"><h4"><%= link_to cocktail.name, cocktail_path(cocktail) %></h4></div>
+    </div>
+  <% end %>
+</div>
+
