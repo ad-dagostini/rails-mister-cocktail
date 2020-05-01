@@ -1,8 +1,10 @@
-<div class="col-md-8 p-5 mt-3">
-<%= simple_form_for(@cocktail) do |f|  %>
-  <%= f.label :name %>
-  <%= f.text_field :name %>
-  <%= f.input :photo, as: :file %>
-  <%= f.submit %>
-<% end %>
+<div class="banner d-flex">
+  <div class="form-group">
+  <%= simple_form_for(@cocktail) do |f|  %>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+    <%= f.input :photo, as: :file %>
+    <div class="btn btn-outline-secondary"><%= f.submit %></div>
+  <% end %>
+  </div>
 </div>

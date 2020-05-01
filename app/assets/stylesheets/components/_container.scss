@@ -8,3 +8,29 @@
   font-weight: bold;
   font-size: 32px;
 }
+
+.container-show {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.container-show h2 {
+  text-align: center;
+  padding: 30px;
+  font-weight: bold;
+}
+
+.container-show h4 {
+  text-align: left;
+  padding-left: 30px;
+  font-weight: bold;
+}
+
+.link2 {
+  background-color: rgba(150, 150, 150, 0.7);
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+  border: 1px solid white;
+}

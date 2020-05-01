@@ -4,7 +4,6 @@
   background-position: center;
   padding: 150px 0;
 }
-
 .banner h1 {
   margin: 40px;
   text-align: center;
@@ -14,4 +13,21 @@
   font-weight: bold;
   font-size: 45px;
   line-height: 1.6;
+}
+
+.banner-show {
+  background-image: asset-url('Cocktail-Making.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+  height: 200px;
+  h1 {
+    text-align: center;
+    border: 1px solid white;
+    text-overflow: clip;
+    color: white;
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 1.6;
+  }
 }
