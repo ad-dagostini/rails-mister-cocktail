@@ -5,6 +5,7 @@
   </div>
 </div>
 <div class="container p-5 mt-3">
+  <div><%= cl_image_tag @cocktail.photo.key, crop: :fill %></div>
   <h2><%= @cocktail.name %></h2>
   <h4><strong>Recipe<strong></h4>
     <% @cocktail.doses.each do |dose| %>

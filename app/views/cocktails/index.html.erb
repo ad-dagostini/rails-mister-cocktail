@@ -1,16 +1,33 @@
-<div class="image mt-5 mb-5 p-4">
-  <div class="image-text mb-3 mt-3 p-4"><h1><strong>COCKTAILS<strong></h1></div>
+<div class="banner">
+  <div class="container">
+    <h1>MISTER COCKTAILS</h1></div>
+  </div>
 <div>
 
-</div class="create mt-5 mb-5 p-4">
-  <h4 class="text-center"><%= link_to "Create Your Cocktail", new_cocktail_path %></h4>
+<div>
+  <%= link_to "Create Your Cocktail", new_cocktail_path, class: "btn btn-outline-secondary p-2 m-2" %>
 </div>
 
-<div class="container d-flex mt-5 mb-5 p-4">
-  <% @cocktails.each do |cocktail| %>
-    <div class="card m-4" style="width: 18rem;">
-      <div class="text-center"><h4"><%= link_to cocktail.name, cocktail_path(cocktail) %></h4></div>
-    </div>
-  <% end %>
+<div class="container">
+
+  <div class="cards">
+    <% @cocktails.each do |cocktail| %>
+      <div class="card">
+        <%= link_to cocktail.name, cocktail_path(cocktail), {:style=>'color:#FFFFFF;', :class => "link"} %>
+      </div>
+    <% end %>
+  </div>
 </div>
 
+<div class="footer">
+  <div class="links">
+    <a href="" target="_blank" class="social-icon">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="" target="_blank" class="social-icon">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="" target="_blank" class="social-icon">
+      <i class="fab fa-twitter"></i>
+    </a>
+  </div>
