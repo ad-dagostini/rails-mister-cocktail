@@ -4,15 +4,14 @@
   </div>
 </div>
 <div class="container-show">
-
-  <div class="d-flex align-items-center">
-    <%= cl_image_tag @article.photo.key, height: 300, width: 400, crop: :fill %>
-    <h2><%= @cocktail.name %></h2>
-  </div>
+  <h2><%= @cocktail.name %></h2>
   <h4><strong>INGREDIENTS<strong></h4>
     <% @cocktail.doses.each do |dose| %>
+    <div class="d-flex align-items-center">
+      <h4><%= dose.description%> of <%= dose.ingredient.name %> | </h4>
       <div class="list-unstyled ml-2">
         <h6><%= link_to "DELETE", dose_path(dose), method: :delete, data: { confirm: 'You sure?'} %><h6>
+      </div>
     </div>
   <% end %>
   <h4 class="mt-5"><strong>Adding a new ingredient<strong></h4>
