@@ -4,7 +4,11 @@
   </div>
 </div>
 <div class="container-show">
-  <h2><%= @cocktail.name %></h2>
+
+  <div class="d-flex align-items-center">
+    <%= cl_image_tag @article.photo.key, height: 300, width: 400, crop: :fill %>
+    <h2><%= @cocktail.name %></h2>
+  </div>
   <h4><strong>INGREDIENTS<strong></h4>
     <% @cocktail.doses.each do |dose| %>
     <div class="d-flex align-items-center">
